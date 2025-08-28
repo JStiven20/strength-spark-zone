@@ -59,7 +59,7 @@ export default {
 				dark: {
 					DEFAULT: 'hsl(var(--dark))',
 					foreground: 'hsl(var(--dark-foreground))'
-				}
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

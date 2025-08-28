@@ -1,37 +1,75 @@
+import React from 'react';
+
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">
-          ¡Página Funcionando!
-        </h1>
-        
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-            <h2 className="text-2xl font-semibold text-blue-800 mb-4">
-              Bienvenido
-            </h2>
-            <p className="text-blue-700 mb-4">
-              Esta es una página simple y funcional sin dependencias externas.
-            </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-colors">
-              Botón de Ejemplo
-            </button>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-800 mb-2">Característica 1</h3>
-              <p className="text-gray-600">Descripción de la primera característica.</p>
-            </div>
-            
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-800 mb-2">Característica 2</h3>
-              <p className="text-gray-600">Descripción de la segunda característica.</p>
-            </div>
-          </div>
+    <div className="container">
+      {/* Hero Section */}
+      <section className="hero">
+        <h1>Bienvenido a Nuestro Proyecto</h1>
+        <p>
+          Una aplicación moderna y funcional construida con React y diseño responsivo.
+          Descubre todas las características que tenemos para ofrecerte.
+        </p>
+        <button className="btn" onClick={() => alert('¡Hola! Botón funcionando')}>
+          Comenzar Ahora
+        </button>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <div className="feature-card">
+          <h3>🚀 Rápido y Eficiente</h3>
+          <p>
+            Construido con las mejores prácticas de desarrollo para garantizar 
+            un rendimiento óptimo y una experiencia de usuario fluida.
+          </p>
         </div>
-      </div>
+        
+        <div className="feature-card">
+          <h3>📱 Diseño Responsivo</h3>
+          <p>
+            Adaptado perfectamente a todos los dispositivos, desde móviles 
+            hasta pantallas de escritorio de alta resolución.
+          </p>
+        </div>
+        
+        <div className="feature-card">
+          <h3>🎨 Interfaz Moderna</h3>
+          <p>
+            Diseño limpio y moderno con animaciones suaves y una experiencia 
+            visual atractiva que encanta a los usuarios.
+          </p>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="stats">
+        <div className="stat-item">
+          <div className="stat-number">100+</div>
+          <div className="stat-label">Usuarios Satisfechos</div>
+        </div>
+        
+        <div className="stat-item">
+          <div className="stat-number">50+</div>
+          <div className="stat-label">Proyectos Completados</div>
+        </div>
+        
+        <div className="stat-item">
+          <div className="stat-number">24/7</div>
+          <div className="stat-label">Soporte Disponible</div>
+        </div>
+        
+        <div className="stat-item">
+          <div className="stat-number">99%</div>
+          <div className="stat-label">Tiempo de Actividad</div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>&copy; 2024 Mi Proyecto. Todos los derechos reservados.</p>
+        <p>Creado con React y mucho ❤️</p>
+      </footer>
     </div>
   );
 }
